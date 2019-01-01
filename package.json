@@ -9,23 +9,34 @@
   },
   "bugs": "https://github.com/zacanger/wdz/issues",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.11.1",
+    "eslint-config-zacanger": "3.4.2",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-unicorn": "6.0.1",
+    "tape": "4.9.2"
+  },
   "engines": {
     "node": ">=10.0.0"
   },
   "homepage": "https://github.com/zacanger/wdz#readme",
   "keywords": [
-    "",
-    "wdz"
+    "unwords",
+    "words"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zacanger/wdz.git"
   },
   "scripts": {
-    "start": "node index",
-    "test": ""
+    "test": "npm run test:lint && npm run test:tape",
+    "test:lint": "eslint -c .eslintrc.json lib/*.js",
+    "test:tape": "tape lib/*.test.js",
+    "preversion": "npm t"
   }
 }
