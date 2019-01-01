@@ -1,0 +1,31 @@
+{
+  "name": "wdz",
+  "description": "wdz",
+  "version": "0.0.1",
+  "author": {
+    "name": "Zac Anger",
+    "email": "zac@zacanger.com",
+    "url": "https://zacanger.com"
+  },
+  "bugs": "https://github.com/zacanger/wdz/issues",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/zacanger/wdz#readme",
+  "keywords": [
+    "",
+    "wdz"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacanger/wdz.git"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": ""
+  }
+}
