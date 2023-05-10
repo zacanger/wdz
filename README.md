@@ -2,6 +2,8 @@
 
 `words` and `unwords` functions.
 
+[Donate](https://ko-fi.com/zacanger)
+
 --------
 
 ## Installation
